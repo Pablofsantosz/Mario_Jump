@@ -3,7 +3,7 @@
 .bord{
     width: 80%;
     height: 500px;
-    border: 18px solid #333;
+    border: 1px solid #333;
     margin:  0 auto;
 
 }
