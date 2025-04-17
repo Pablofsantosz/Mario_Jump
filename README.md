@@ -1,6 +1,6 @@
 # Mario Jump 🎮
 
-Este é um joguinho simples feito para testar alguns conhecimentos básicos em **HTML**, **CSS** e **JavaScript**.
+Este é um joguinho simples(bem basico) feito para testar alguns conhecimentos básicos em **HTML**, **CSS** e **JavaScript**.
 
 O objetivo é fazer o Mario pular e desviar dos obstáculos. Foi criado como prática de lógica, manipulação do DOM e animações com CSS.
 
