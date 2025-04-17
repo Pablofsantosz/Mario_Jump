@@ -6,11 +6,62 @@
     border: 1px solid #333;
     margin:  0 auto;
     position: relative;
+    overflow: hidden;  /* tudo que daur da borda nao aparecer na tela */
 
 }
 .pipe {
     width: 80px; /* ou o tamanho que você quiser */
-    position: absolute; /*absolute server  para que nenhuma img interfira no comportamento da outra*/
+    position: absolute; /*absolute serve  para que nenhuma img interfira no comportamento da outra*/
     bottom: 0;
-    left: 300px;
+    animation: pipe-animation 5s infinite linear; /*basicamente vai ser para usar a animação e elaser infinita e linear*/
+}
+.mario{
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+    animation: jump 500ms ease-out ;
+
+}
+
+.jump{
+    animation: jump 500ms ease-out ;
+
+}
+
+
+
+
+@keyframes pipe-animation{
+    from{           /*onde animação começa "*/
+        right:-80px;
+
+    }
+
+    to{             /*onde animação termina */
+        right: 100%;
+
+    }
+    
+}
+
+@keyframes jump{
+    /*Quando tiver em 0  % da anima o bottom vai ser 0 pois ele esta no chao*/
+
+    0%{ /*Inicio*/
+        bottom:0;
+    }
+    40%{
+        bottom: 180px;
+    }
+    
+    50%{ /*Meio*/
+        bottom: 180px;
+    }
+    60%{
+        bottom: 180px;
+    }
+    100%{/*FIm*/
+        bottom:0;
+    }
+    
 }
