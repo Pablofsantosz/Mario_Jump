@@ -5,5 +5,12 @@
     height: 500px;
     border: 1px solid #333;
     margin:  0 auto;
+    position: relative;
 
+}
+.pipe {
+    width: 80px; /* ou o tamanho que você quiser */
+    position: absolute; /*absolute server  para que nenhuma img interfira no comportamento da outra*/
+    bottom: 0;
+    left: 300px;
 }
