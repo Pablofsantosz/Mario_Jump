@@ -13,12 +13,15 @@ const jump = ()=>{
 
 const loop = setInterval(()=>{
     const pipePosition = pipe.offsetLeft;
-    console.log(pipePosition);
-
-    if(pipePosition <= 120){
+    const marioPosition = +window.getComputedStyle(mario).bottom.replace('px','') ;
+    
+    if(pipePosition <= 120 && pipePosition > 0  && marioPosition < 80){//Se o tubo chegou e a altura do mario for menor que 80 px o jogo acaba 
         pipe.style.animation = 'none';
-        pipe.style.left = `${pipePosition}px`;
-    }
+        pipe.style.left = `${pipePosition}px`;  
+    
+
+        mario.style.animation ='none';
+        mario.style.bottom = `${marioPosition}px`};
      
 },10);
 
